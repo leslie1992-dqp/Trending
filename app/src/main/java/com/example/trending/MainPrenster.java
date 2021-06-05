@@ -13,9 +13,9 @@ public class MainPrenster extends FirstPrenster<MainActivity,MainModel> {
     public MainModel getModelInstance() {
         return new MainModel(this);
     }
-    public void getList(String language, String since, String spoken_language_code){
+    public void getList(String language, String since, String code){
 
-        mB.getList(language,since,spoken_language_code);
+        mB.getList(language,since,code);
 
     }
 

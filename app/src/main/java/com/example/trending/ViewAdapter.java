@@ -69,7 +69,7 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.PressHolder>{
         }
     }
     public void setOnItemClickListener(OnItemClickListener listener) {
-        //设置一个监听器，其实就是设置一个回调的接口
+        //一个回调的接口
         this.mOnItemClickListener=listener;
 
     }
@@ -117,7 +117,7 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.PressHolder>{
             url.setText(data.getUrl());
             if(data.getLanguage()!=null)
                 language.setText(data.getLanguage());
-            else language.setText("--");
+            else language.setText("0");
             stars.setText((String.valueOf(data.getStars())));
             lines.setText(String.valueOf(data.getLines()));
             color=data.getLanguageColor();
@@ -127,7 +127,6 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.PressHolder>{
             }
             if (color==null)
                 mLanguageColor.setImageDrawable(new ColorDrawable(Color.parseColor("#525252")));
-            Log.d("1","3"+color);
             uri= Uri.parse(data.getUrl());
             icon.setImageURI(uri);
         }

@@ -154,9 +154,9 @@ public class MainActivity extends FirstActivity<MainPrenster> {
         adapter.setOnItemClickListener(new ViewAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                LinearLayout end = (LinearLayout) findViewById(R.id.all_Layout);
+                //LinearLayout end = (LinearLayout) findViewById(R.id.all_Layout);
                 //显示隐藏的bar
-                end.setVisibility(View.VISIBLE);
+                //end.setVisibility(View.VISIBLE);
             }
         });
         }
