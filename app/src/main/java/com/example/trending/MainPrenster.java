@@ -21,7 +21,7 @@ public class MainPrenster extends FirstPrenster<MainActivity,MainModel> {
 
     public void setListBeans(List<ListBean> listBeans) {
         this.mListBeans = listBeans;
-        Log.d("1","2"+mListBeans.size());
+
     }
     public void setData(){
         mA.setData(mListBeans);
